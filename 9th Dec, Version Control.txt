@@ -1,0 +1,677 @@
+﻿haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ls
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ls la
+ls: cannot access 'la': No such file or directory
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ls -la
+total 8
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:50 ./
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:51 ../
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ git init
+Initialized empty Git repository in D:/Zemoso-Training/.git/
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ ls
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ ls -la
+total 12
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:52 ./
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:51 ../
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:52 .git/
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ rm -rf .git
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ls -la
+total 8
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:53 ./
+drwxr-xr-x 1 haree 197609 0 Dec  9 15:51 ../
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ git init
+Initialized empty Git repository in D:/Zemoso-Training/.git/
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+nothing to commit (create/copy files and use "git add" to track)
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ touch .gitignore
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ open .git
+bash: open: command not found
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git add .gitignore
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git commit -m "Initial Commit"
+[main (root-commit) fd64866] Initial Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ git log
+commit fd64866a5a64560d879d5e188f5b3aa2336be206 (HEAD -> main)
+Author: hareesh-cs <hareeshsikakollu@gmail.com>
+Date:   Thu Dec 9 16:16:50 2021 +0530
+
+
+    Initial Commit
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ cd ..
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d
+$ cd Zemoso-Training
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ mkdir Version-Control
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ cd Version-Control
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git init
+Initialized empty Git repository in D:/Zemoso-Training/Version-Control/.git/
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ rm -rf .git
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ la -ls
+bash: la: command not found
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ ls -la
+total 0
+drwxr-xr-x 1 haree 197609 0 Dec  9 16:21 ./
+drwxr-xr-x 1 haree 197609 0 Dec  9 16:21 ../
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ cd ..
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training (main)
+$ rm -rf .git
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ls
+Version-Control/
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ ^C
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training
+$ cd Version-Control
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control
+$ git init
+Initialized empty Git repository in D:/Zemoso-Training/Version-Control/.git/
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo hello world > file1.txt
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo print("My first day in Zemoso") > file2.py
+bash: syntax error near unexpected token `('
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo print"("My first day in Zemoso")" > file2.py
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+        file2.py
+
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+
+
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+        file2.py
+
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add -A
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in file2.py.
+The file will have its original line endings in your working directory
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.py
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo print"(""Modifing the py file"")" >> file2.py
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.py
+
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file2.py
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add .
+warning: LF will be replaced by CRLF in file2.py.
+The file will have its original line endings in your working directory
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+
+
+No commits yet
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.py
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git commit -m "Initial commit."
+[main (root-commit) 3ebb14a] Initial commit.
+ 2 files changed, 3 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.py
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git commit
+On branch main
+nothing to commit, working tree clean
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ ^C
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Contr$
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git remote add origin https://github.com/hareesh-cs/Zemoso-T$ git remote add origin https://github.com/hareesh-cs/Zemoso-Train
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git remote add origin https://github.com/hareesh-cs/Zemoso-Training.git
+error: remote origin already exists.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/Zemoso-Training.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push -u origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/
+hint: Updates were rejected because the remote contains work that
+hint: not have locally. This is usually caused by another reposito
+hint: to the same ref. You may want to first integrate the remote
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/hareesh-cs/
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git push -u origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/
+hint: Updates were rejected because the remote contains work that
+hint: not have locally. This is usually caused by another reposito
+hint: to the same ref. You may want to first integrate the remote
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ ls
+file1.txt  file2.py
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git push -origin main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git push -u origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/
+hint: Updates were rejected because the remote contains work that
+hint: not have locally. This is usually caused by another reposito
+hint: to the same ref. You may want to first integrate the remote
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (
+$ git push origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/Zemoso-Training.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hareesh-cs/Zemoso-Training.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add -A
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo Hi my name is Hareesh >> file1.txt
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add -A
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file1.txt
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git commit -m "modified file1"
+[main f86b953] modified file1
+ 1 file changed, 1 insertion(+)
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 816 bytes | 54.00 KiB/s, done.
+From https://github.com/hareesh-cs/Zemoso-Training
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push origin main
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/hareesh-cs/Zemoso-Training.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push --help\
+> git push --help
+error: unknown option `helpgit'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push --help
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git pull origin main
+From https://github.com/hareesh-cs/Zemoso-Training
+ * branch            main       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git branch -M main
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git pull origin main
+fatal: couldn't find remote ref main
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git remote add origin https://github.com/hareesh-cs/Zemoso-Training.git
+error: remote origin already exists.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git branch -M main
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push - u origin main
+error: src refspec u does not match any
+error: src refspec origin does not match any
+error: failed to push some refs to '-'
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git remote add origin https://github.com/hareesh-cs/Zemoso-Training.git
+error: remote origin already exists.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git branch -M main
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 598 bytes | 598.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hareesh-cs/Zemoso-Training.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ echo ZEMOSO-Trainin > README.md
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git add -A
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git commit
+[main f9c34fa] adding a README file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hareesh-cs/Zemoso-Training.git
+   f86b953..f9c34fa  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+
+haree@DESKTOP-HBLLE6M MINGW64 /d/Zemoso-Training/Version-Control (main)
+$
