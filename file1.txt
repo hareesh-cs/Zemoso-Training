@@ -1,4 +1,4 @@
 hello world
 Hi my name is Hareesh
 testing staging diff
-creating a merge conflict
+Trying to solve the conflict
